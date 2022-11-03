@@ -1,0 +1,117 @@
+.whoami{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 2rem;
+}
+
+.whoami__text{
+    background-image: url("https://raw.githubusercontent.com/vargas-luis/Portfolio/main/img/background.jpg");
+    /* background-color: var(--fondo); */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(45vw);
+    background-size: cover;
+    border-radius: 40px;
+    padding: 20px;
+    display: grid;
+    grid-area: 1 3;
+    margin-bottom: 1.5rem;
+}
+
+#whoami__foto{
+    grid-row: 1;
+    width: 30vw;
+    border: 2px solid var(--enlac);
+    border-radius: 100px;
+    justify-self: center;
+}
+
+.whoami__titulo{
+    justify-self: center;
+    /* font-size: 2rem; */
+    font-weight: 700;
+    text-shadow: 50%;
+}
+
+.whoami__rrss ul{
+    margin-top: 1rem;
+    font-size: 00.9rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.whoami__rrss{
+    font-weight: bold;
+}
+
+.whoami__rrss li:hover{
+    transform: scale(1.5);
+}
+
+/* PANTALLAS TABLET Y PC */
+@media screen and (min-width:768px) {
+    .whoami{
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 2rem;
+
+        background-image: url("https://raw.githubusercontent.com/vargas-luis/Portfolio/main/img/background.jpg");
+        background-color: var(--fondo);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: calc(65vw);
+        background-size: cover;
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    .whoami__text{
+        background-image: none;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: space-evenly;
+    }
+
+    .whoami__text h1{
+        order: 3;
+    }
+
+    .whoami__text{
+        display: flex;
+        flex-flow: column;
+    }
+
+    
+
+}
+
+
+@media screen and (min-width:1024px) {
+    .cabecera{
+        justify-content: space-between;
+    }
+    
+    .menu__link{
+        display: contents;
+    }
+
+}
+
+
+<div class="whoami__text">
+                <img src="./img/foto_perfil.png" alt="foto-perfil" id="whoami__foto">
+                <h1 class="whoami__titulo">Soy Luis Vargas</h1>
+                <h2 class="whoami__titulo">y construyo páginas web</h2>
+            </div>
+            <div class="whoami__parrafo">
+                <p id="whoami__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere.</p>
+            </div>
+            <div class="whoami__rrss">
+                <ul>
+                    <li><a href="https://github.com/vargas-luis">GitHub 🡥</a></li>
+                    <li><a href="https://www.linkedin.com/in/dev-luis-vargas/">LinkedIn 🡥</a></li>
+                    <li><a href="#">Instagram 🡥</a></li>
+                    <li><a href="./resources/cv.pdf" target="_blank">Currículo 🡥</a></li>
+                </ul>
+            </div>

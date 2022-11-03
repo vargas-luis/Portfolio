@@ -1,15 +1,52 @@
 .cabecera{
     display: flex;
-    justify-content: space-between ;
-    align-content: center;
+    justify-content: space-between;
     margin-bottom: 1rem;
 }
 
 #cabecera__nombre{
     font-weight: 700;
     font-size: 1.1rem;
+
 }
 
-#cabecera__correo{
-    font-size: 0.9rem;
+.menu__lista{
+    display: flex;
+    column-gap: 20px;
+}
+
+.menu__link{
+    display: none;
+}
+
+#menu__contacto{
+    display: contents;
+    font-weight: bold;
+}
+
+.menu__item:hover{
+    transform: scale(1.2);
+}
+
+
+/* PANTALLAS TABLET Y PC */
+@media screen and (min-width:768px) {
+    .cabecera{
+        justify-content: space-around;
+    }
+    
+    .menu__link{
+        display: contents;
+    }
+
+}
+@media screen and (min-width:1024px) {
+    .cabecera{
+        justify-content: space-between;
+    }
+    
+    .menu__link{
+        display: contents;
+    }
+
 }

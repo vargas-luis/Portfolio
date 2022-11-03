@@ -23,10 +23,10 @@
 }
 
 .producto__botones{
-    background-color: var(--enlac);
+    background-color: var(--texto);
     border-radius: 5px;
     width: 40%;
-    color: var(--boton);
+    color: var(--enlac);
     padding: 10px;
     margin-top: 0.5rem;
     font-size: 0.6rem;
@@ -35,14 +35,15 @@
     opacity: 0.8;
 }
 
-.producto__botones{
+.producto__botones:hover{
     transform: scale(1.1);
     opacity: 1;
 }
 
 .producto__botones a:link, .producto__botones a:visited{
     text-decoration: none;
-    color: var(--boton);
+    color: var(--enlac);
+    text-decoration: none;
 }
 
 /* ----------------------------------CYPHER ONLY */
@@ -57,11 +58,14 @@
 
 #caja__uno__mensaje, #caja__dos__mensaje{
     margin: 1rem auto;
-    width: 95%;
+    width: 85%;
     height: 30vw;
     resize: none;
     border: none;
-    font-size: 0.7rem;
+    outline: none;
+    font-size: 0.8rem;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .caja__boton{

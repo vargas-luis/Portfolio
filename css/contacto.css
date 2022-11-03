@@ -15,14 +15,14 @@ form label{
     background: white;
     width: 80vw;
     border: none;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .input__contacto{
     width: 80vw;
     border: none;
     border-bottom: 2px solid var(--texbt);
-    padding: 10px 10px;
+    padding: 10px;
     margin-bottom: 1rem;
     outline: none;
 }
@@ -30,6 +30,7 @@ form label{
 
 #contacto__mensaje{
     border: none;
+    border-bottom: 2px solid var(--texbt);
     resize: none;
     outline: none;
 }

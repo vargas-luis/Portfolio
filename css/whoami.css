@@ -1,49 +1,133 @@
 .whoami{
-    display: flex;
-    flex-flow: column nowrap;
     margin-bottom: 2rem;
 }
 
-.whoami__text{
-    background-image: url("./background.jpg");
-    background-color: var(--fondo);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: calc(45vw);
-    background-size: cover;
-    border-radius: 40px;
-    padding: 20px;
-    display: grid;
-    grid-area: 1 3;
-    margin-bottom: 1.5rem;
-}
-
 #whoami__foto{
-    grid-row: 1;
     width: 30vw;
     border: 2px solid var(--enlac);
     border-radius: 100px;
-    justify-self: center;
+    margin: 0 auto;
 }
 
-.whoami__titulo{
-    justify-self: center;
-    /* font-size: 2rem; */
-    font-weight: 700;
-    text-shadow: 50%;
+.whoami__text{
+    background-image: url("https://raw.githubusercontent.com/vargas-luis/Portfolio/main/img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .whoami__rrss ul{
-    margin-top: 1rem;
-    font-size: 00.9rem;
     display: flex;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    font-size: 0.8rem;
+    justify-content: space-between;
 }
 
-.whoami__rrss{
-    font-weight: bold;
+.whoami__parrafo h1{
+    display: none;
 }
 
 .whoami__rrss li:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+/* PANTALLAS TABLET Y PC */
+@media screen and (min-width:768px) {
+    .whoami{
+        background-image: url("https://raw.githubusercontent.com/vargas-luis/Portfolio/main/img/background.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        color: var(--impac);
+        padding: 20px 40px 10px 40px;
+    }
+
+    .whoami__text{
+        background-image: none;
+    }
+
+    #whoami__text{
+        display: none;
+    }
+    
+    .whoami__parrafo h1{
+        display: contents;
+    }
+
+    .whoami__info{
+        padding: 10px 20px 10px 20px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    .whoami__rrss ul{
+        justify-content: space-evenly;
+    }
+
+    .whoami__rrss a:link, .whoami__rrss a:visited{
+        color: var(--impac);
+        font-weight: normal;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .whoami{
+        background-image: url("https://raw.githubusercontent.com/vargas-luis/Portfolio/main/img/background.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        color: var(--impac);
+        padding: 40px 40px 20px 40px;
+    }
+
+    .whoami__text{
+        background-image: none;
+    }
+
+    #whoami__text{
+        display: none;
+    }
+    
+    .whoami__parrafo h1{
+        display: contents;
+        font-size: 2.5rem;
+    }
+
+    .whoami__parrafo p{
+        margin-top: 4rem;
+        font-size: 1.8rem;
+        font-weight: normal;
+    }
+
+    .whoami__info{
+        padding: 10px 20px 10px 20px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    .whoami__rrss ul{
+        justify-content: space-evenly;
+    }
+
+    .whoami__rrss a:link, .whoami__rrss a:visited{
+        color: var(--impac);
+        font-weight: normal;
+        font-size: 1.4rem;
+    }
 }

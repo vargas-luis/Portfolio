@@ -1,0 +1,39 @@
+:root{
+    --fondo: #2fb8e5;
+    --texto: #000000;
+    --boton: #215a6d;
+    --enlac: #ffffff;
+    --varis: #92c7a3;
+    --texbt: #ff0000;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    padding: 20px;
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    /* font-weight: 700; */
+    font-size: 1.2rem;
+}
+
+/* h4 texto descriptivo */
+
+p{
+    text-align: justify;
+}
+
+a:link, a:visited{
+    color: var(--enlac);
+}

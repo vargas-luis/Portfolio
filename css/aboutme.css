@@ -1,0 +1,22 @@
+.aboutme{
+    display: grid;
+    grid-area: 1 3;
+    margin-bottom: 2rem;
+}
+
+#aboutme__titulo{
+    grid-row: 1;
+    margin: 1rem 0;
+}
+
+#aboutme__parrafo{
+    grid-row: 2;
+}
+
+#aboutme__firma{
+    grid-row: 3;
+    width: 30vw;
+    justify-self: center;
+    margin-top: 1rem;
+}
+

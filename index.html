@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cabecera.css">
+    <link rel="stylesheet" href="./css/whoami.css">
+    <link rel="stylesheet" href="./css/aboutme.css">
+    <link rel="stylesheet" href="./css/skills--formacion.css">
+    <link rel="stylesheet" href="./css/experiencia.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="./resources/cypher.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <section class="cabecera">
+            <h3 id="cabecera__nombre">Luis Vargas</h3>
+            <!-- <h3 id="cabecera__correo">piloto@duck.com</h3> -->
+            <a href="mailto:piloto@duck.com" id="cabecera__correo">piloto@duck.com</a>
+        </section>
+    </header>
+    <main>
+        <section class="whoami">
+            <div class="whoami__text">
+                <img src="./img/foto_perfil.png" alt="foto-perfil" id="whoami__foto">
+                <h1 class="whoami__titulo">Soy Luis Vargas</h1>
+                <h2 class="whoami__titulo">y construyo páginas web</h2>
+            </div>
+            <p id="whoami__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas maecenas pharetra convallis posuere.</p>
+            <div class="whoami__rrss">
+                <ul>
+                    <li><a href="https://github.com/vargas-luis">GitHub 🡥</a></li>
+                    <li><a href="https://www.linkedin.com/in/dev-luis-vargas/">LinkedIn 🡥</a></li>
+                    <li><a href="#">Instagram 🡥</a></li>
+                    <li><a href="./resources/cv.pdf" target="_blank">Currículo 🡥</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="aboutme">
+            <h1 id="aboutme__titulo">Sobre mí</h1>
+            <p id="aboutme__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis convallis convallis tellus id interdum. Volutpat consequat mauris nunc congue nisi vitae suscipit. Gravida dictum fusce ut placerat orci nulla pellentesque. Arcu non sodales neque sodales. In est ante in nibh mauris cursus mattis molestie. Bibendum enim facilisis gravida neque convallis a cras semper. 
+
+            Posuere ac ut consequat semper. Nunc id cursus metus aliquam eleifend mi. Id leo in vitae turpis massa sed elementum tempus egestas. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Ornare suspendisse sed nisi lacus sed. Faucibus vitae aliquet nec ullamcorper sit amet risus. Commodo elit at imperdiet dui accumsan sit amet. Sapien eget mi proin sed libero enim sed faucibus turpis. Fringilla urna porttitor rhoncus dolor purus non.</p>
+            <img src="./img/foto_firma.jpg" alt="firma" id="aboutme__firma">
+        </section>
+        <section class="skills">
+            <h1 id="skills_titulo">Skills</h1>
+            <ul>
+                <li><img src="./img/skills/html5.svg" class="skills__list_item">Html5</li>
+                <li><img src="./img/skills/javascript.svg" class="skills__list_item">Javascript</li>
+                <li><img src="./img/skills/css3.svg" class="skills__list_item">CSS3</li>
+                <li><img src="./img/skills/python.svg" class="skills__list_item">Python</li>
+            </ul>
+        </section>
+        <section class="formacion">
+            <h1 id="formacion__titulo">Formación Académica</h1>
+            <div class="formacion__list">
+                <ul>
+                    <li><img src="./img/formacion/alura.svg" class="formacion__list__item"><h3>Front End Dev</h3><h3>2022 - Alura</h3></li>
+                    <li><img src="./img/formacion/academica.png" class="formacion__list__item"><h3>Programación con Python</h3><h3>2021 - Académica</h3></li>
+                </ul>
+            </div>
+        </section>
+        <section class="experiencia">
+            <h1 id="experiencia__titulo">Experiencia Profesional</h1>
+
+            <div class="experiencia__experiencia">
+                <div class="experiencia__producto" id="experiencia__producto__cypher">
+                    <div class="experiencia__producto__img">
+                        <h2>Código Secreto</h2>
+                        <div class="cypher__caja">
+                            <div class="cypher__caja__uno">
+                                <textarea id="caja__uno__mensaje" cols="30" rows="5" onclick = cleanBox(id) type="text" placeholder="Ingrese el texto aqui"></textarea>
+                                <h4>Solo letras y sin acentos</h4>
+                                <button class="caja__boton" id="encriptar" onclick=cypher(1)>Encriptar</button>
+                                <button class="caja__boton" id="desencriptar" onclick=cypher(0)>Desencriptar</button>
+                            </div>
+    
+                            <div class="cypher__caja__dos">                 
+                                <textarea id="caja__dos__mensaje" cols="30" rows="5" placeholder="Texto Encriptado"></textarea>
+                                <h4>Copia el texto</h4>
+                                <button class="caja__boton" onclick=copiarTexto()>Copiar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiencia__producto__descripcion">
+                        <h2>Encriptador de texto</h2>
+                        <h3>Challenge Oracle</h3>
+                    </div>
+                    <div class="experiencia__producto__botones">
+                        <button class="producto__botones"><a href="https://github.com/vargas-luis/cifrador" target="_blank">Repositorio</a></button>
+                        <button class="producto__botones"><a href="https://vargas-luis.github.io/cifrador/" target="_blank">Ver demo</a></button>                     </button>
+                    </div>
+                </div>
+            </div>
+            <div class="experiencia__experiencia">
+                <div class="experiencia__producto" id="experiencia__producto__ahorcado">
+                    <div class="experiencia__producto__img">
+                        <img src="./img/ahorcado.jpeg" alt="" width="300px">
+                    </div>
+                    <div class="experiencia__producto__descripcion">
+                        <h2>Ahorcado creado con HTML, CSS y Javascript</h2>
+                        <h3>Challenge Oracle</h3>
+                    </div>
+                    <div class="experiencia__producto__botones">
+                        <button class="producto__botones"><a href="https://github.com/vargas-luis/ahorcado-alura" target="_blank">Repositorio</a></button>
+                        <button class="producto__botones"><a href="https://vargas-luis.github.io/ahorcado-alura/" target="_blank">Ver demo</a></button>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <div class="contacto__texto">
+                <h1 id="contacto__titulo">Contacto</h1>
+                <p>¿Quieres contactarme?</p>
+                <br>
+                <p>Completa el formulario y me pondré en contacto a la brevedad</p>
+            </div>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="contacto__nombre" class="input__contacto" required>
+                
+                <label for="correoelectronico">E-mail</label>
+                <input type="email" id="contacto__correo" class="input__contacto" required placeholder="email@dominio.com">
+                
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="contacto__telefono" class="input__contacto">
+                
+                <label for="asunto">Asunto</label>
+                <input type="text" id="contacto__asunto" class="input__contacto" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="caja-mensaje" id="contacto__mensaje" rows="10" class="input__contacto"></textarea>
+
+                <input type="submit" id="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h2>Desarrollado por Luis Vargas</h2>
+        <br>
+        <h3>&copy 2022</h3>
+    </footer>
+</body>
+</html>

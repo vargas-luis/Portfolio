@@ -1,0 +1,56 @@
+.contacto{
+    margin-top: 2rem 0;
+}
+
+.contacto__texto, #contacto__titulo{
+    margin: 1rem 0;
+}
+
+form label, form legend{
+    display: block;
+}
+
+form label{
+    font-weight: bold;
+    background: white;
+    width: 80vw;
+    border: none;
+    padding: 10px 10px;
+}
+
+.input__contacto{
+    width: 80vw;
+    border: none;
+    border-bottom: 2px solid var(--texbt);
+    padding: 10px 10px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+
+#contacto__mensaje{
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+
+#submit{
+    width: 30%;
+    padding: 10px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 5%;
+    font-weight: bolder;
+    color: white;
+    background: orange;
+    border-radius: 20px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}

@@ -1,0 +1,49 @@
+.whoami{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: 2rem;
+}
+
+.whoami__text{
+    background-image: url("/img/background.jpg");
+    background-color: var(--fondo);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(45vw);
+    background-size: cover;
+    border-radius: 40px;
+    padding: 20px;
+    display: grid;
+    grid-area: 1 3;
+    margin-bottom: 1.5rem;
+}
+
+#whoami__foto{
+    grid-row: 1;
+    width: 30vw;
+    border: 2px solid var(--enlac);
+    border-radius: 100px;
+    justify-self: center;
+}
+
+.whoami__titulo{
+    justify-self: center;
+    /* font-size: 2rem; */
+    font-weight: 700;
+    text-shadow: 50%;
+}
+
+.whoami__rrss ul{
+    margin-top: 1rem;
+    font-size: 00.9rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.whoami__rrss{
+    font-weight: bold;
+}
+
+.whoami__rrss li:hover{
+    transform: scale(1.5);
+}

@@ -1,0 +1,89 @@
+.experiencia{
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 2rem;
+}
+
+.experiencia__producto{
+    /* display: block; */
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 4px dotted var(--boton);
+}
+
+.experiencia__producto__descripcion{
+    margin: 1rem 0;
+}
+
+.experiencia__producto__botones{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.producto__botones{
+    background-color: var(--enlac);
+    border-radius: 5px;
+    width: 40%;
+    color: var(--boton);
+    padding: 10px;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: bolder;
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.producto__botones{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.producto__botones a:link, .producto__botones a:visited{
+    text-decoration: none;
+    color: var(--boton);
+}
+
+/* ----------------------------------CYPHER ONLY */
+#experiencia__producto__cypher{
+    width: 100%;
+    background-image: radial-gradient(var(--varis) 40%, var(--fondo) 80%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+#caja__uno__mensaje, #caja__dos__mensaje{
+    margin: 1rem auto;
+    width: 95%;
+    height: 30vw;
+    resize: none;
+    border: none;
+    font-size: 0.7rem;
+}
+
+.caja__boton{
+    background-color: var(--boton);
+    border-radius: 5px;
+    width: 40%;
+    color: var(--enlac);
+    padding: 10px;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    font-weight: bolder;
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.caja__boton:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.cypher__caja h4{
+    font-size: 0.7rem;
+    color: var(--enlac);
+    font-weight: bold;
+}

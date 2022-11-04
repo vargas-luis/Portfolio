@@ -49,7 +49,7 @@
 /* ----------------------------------CYPHER ONLY */
 #experiencia__producto__cypher{
     width: 100%;
-    background-image: radial-gradient(var(--varis) 40%, var(--fondo) 80%);
+    /* background-image: radial-gradient(var(--varis) 40%, var(--fondo) 80%); */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -88,6 +88,94 @@
 
 .cypher__caja h4{
     font-size: 0.7rem;
-    color: var(--enlac);
+    color: var(--boton);
     font-weight: bold;
+}
+
+/* PANTALLAS TABLET Y PC */
+@media screen and (min-width:768px) {
+    .experiencia{
+        margin: 4rem 0;
+        background: var(--backg);
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    .experiencia__producto, #experiencia__producto__cypher{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .cypher__caja{ width: 60vw;}
+
+    .experiencia__informacion{
+        display: flex;
+        flex-flow: column nowrap;
+        margin: auto 0;
+    }
+
+    #caja__uno__mensaje, #caja__dos__mensaje{
+        margin: 1rem auto;
+        width: 100%;
+        height: 10vw;
+        font-size: 1rem;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #tex__producto__ahorcado{
+        order: -1;
+    }
+
+    .producto__botones{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .caja__boton{
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .experiencia{
+        margin: 4rem 0;
+        background: var(--backg);
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    .experiencia__producto, #experiencia__producto__cypher{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .experiencia__informacion{
+        display: flex;
+        flex-flow: column nowrap;
+        margin: auto 0;
+    }
+
+    .cypher__caja{ width: 60vw;}
+
+    #caja__uno__mensaje, #caja__dos__mensaje{
+        margin: 1rem auto;
+        width: 100%;
+        height: 10vw;
+        font-size: 1rem;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    #tex__producto__ahorcado{
+        order: -1;
+    }
+
+    .producto__botones{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
 }

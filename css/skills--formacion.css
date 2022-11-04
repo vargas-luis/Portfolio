@@ -34,8 +34,35 @@
     align-items: center;
 }
 
+/* PANTALLAS TABLET Y PC */
+@media screen and (min-width:768px) {
+    .skills, .formacion{
+        margin: 4rem 0;
+        background: var(--backg);
+        border-radius: 40px;
+        padding: 20px;
+    }
 
-@media screen and (min-width:800px) {
+    .skills__list_item{
+        width: 10vw;
+    }
+
+    .formacion ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .skills, .formacion{
+        margin: 4rem 0;
+        background: var(--backg);
+        border-radius: 40px;
+        padding: 20px;
+    }
+
     .skills__list_item{
         width: 10vw;
     }

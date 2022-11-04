@@ -85,13 +85,15 @@
 @media screen and (min-width:1024px) {
     .whoami{
         background-image: url("https://raw.githubusercontent.com/vargas-luis/Portfolio/main/img/background.jpg");
+        height: 80vh;
         background-position: center;
         background-size: cover;
         border-radius: 40px;
         display: flex;
         flex-direction: row-reverse;
-        color: var(--impac);
+        color: var(--text);
         padding: 40px 40px 20px 40px;
+        font-weight: 700;
     }
 
     .whoami__text{
@@ -126,7 +128,8 @@
     }
 
     .whoami__rrss a:link, .whoami__rrss a:visited{
-        color: var(--impac);
+        color: var(--text);
+        /* color: var(--impac); */
         font-weight: normal;
         font-size: 1.4rem;
     }

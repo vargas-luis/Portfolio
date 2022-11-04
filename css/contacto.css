@@ -55,3 +55,69 @@ form label{
     background: darkorange;
     transform: scale(1.2);
 }
+
+.contacto__imagen{
+    display: none;
+}
+
+
+/* PANTALLAS TABLET Y PC */
+@media screen and (min-width:768px) {
+    .contacto__imagen{
+        display: contents;
+    }
+
+    .contacto{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .contacto__texto{
+        width: 40vw;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #contacto__imagen{
+        margin-top: 2rem;
+        width: 30vw;
+    }
+
+    form label, .input__contacto{
+        width: 50vw;
+    }
+
+    #submit{
+        margin-left: 50%;
+    }
+}
+
+@media screen and (min-width:1024px) { 
+    .contacto__imagen{
+        display: contents;
+    }
+
+    .contacto{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .contacto__texto{
+        width: 40vw;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #contacto__imagen{
+        margin-top: 2rem;
+        width: 25vw;
+    }
+
+    form label, .input__contacto{
+        width: 50vw;
+    }
+
+    #submit{
+        margin-left: 50%;
+    }
+}
